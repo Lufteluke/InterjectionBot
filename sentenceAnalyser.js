@@ -1,6 +1,6 @@
 module.exports.parseMessage = function (message) {
     const { text } = message
-    return parserString(text)
+    return exports.parserString(text)
 }
 
 module.exports.parserString = function (string) {
