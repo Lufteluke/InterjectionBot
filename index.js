@@ -39,7 +39,12 @@ app.post('/new-message', function(req, res) {
     return res.end()
   }
  
-  var reply = sentenceAnalyser.parse(message)
+  var reply = sentenceAnalyser.parseMessage(message)
+  if (reply == null || reply == "") {
+    //ignore
+    return res.end()
+  }
+
   postString(reply, message, res)  
 })
 
@@ -67,5 +72,5 @@ function postString (reply, message, res) {
 
 //START!
 app.listen(port, function() {
-  console.log('Interjectionbot listening on port ' + port)
+  console.log('InterjectionBot listening on port ' + port)
 })

@@ -1,8 +1,9 @@
 const sentenceAnalyser = require('./sentenceAnalyser')
 
 function test (testcase) {
-    console.log(sentenceAnalyser.parserString(testcase))
+    console.log(sentenceAnalyser.parseString(testcase))
 }
 
-test("linux")
+test("hi linux is cool")
 test("lanex")
+test("hello navy")
