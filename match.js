@@ -80,7 +80,7 @@ module.exports.pairs = [
     ["coyote", "*Yoot"],
     ["youre", "*you're"],
     ["breathtaking", "You're breathtaking!"],
-    ["", "good bot"],
+    ["good bot", "Thanks!"],
 
     //things he likes
     ["jackdaw", "Jackdaws are precious."],    
