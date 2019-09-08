@@ -34,7 +34,7 @@ module.exports.pairs = [
     ["legal", "https://www.youtube.com/watch?v=b7UXig7_-Rg"],
     ["apathy", "https://www.youtube.com/watch?v=Xb7YRaOQzf0"],
     ["the bank", "https://youtu.be/FOt03jAqI_k"],
-    ["Scootaloo", "https://youtu.be/pOPvlA8jZjQ"],
+    ["scootaloo", "https://youtu.be/pOPvlA8jZjQ"],
     ["scoot da burbs", "https://youtu.be/Ag0yDQ4NLfU?t=47"],
     ["mario", "https://m.youtube.com/watch?v=yr_Rpk9HR1g"],
     ["safri duo", "https://m.youtube.com/watch?v=NuTPK1veaQA"],
@@ -56,20 +56,31 @@ module.exports.pairs = [
     ["reality", "https://youtu.be/fV3nflAQ99w"],
     ["you can do it", "https://www.youtube.com/watch?v=rCvtIdLxu1Y"],
     ["spaghetti", "https://youtu.be/SW-BU6keEUw"],
-    ["king", "https://www.youtube.com/watch?v=w_MSFkZHNi4"],
+    [" king", "https://www.youtube.com/watch?v=w_MSFkZHNi4"],
     ["sharing", "https://youtu.be/VTlB9ibTMSo?t=49"],
-    ["crab", "https://www.youtube.com/watch?v=7ktHrtxUHbg"],
+    ["enemy crab", "https://www.youtube.com/watch?v=7ktHrtxUHbg"],
     ["luigi", "https://www.youtube.com/watch?v=15nNY7uofNw"],
     ["brody", "https://www.youtube.com/watch?v=YqBLxzn6kcU"],
     ["limewire", "https://www.youtube.com/watch?v=IBH4g_ua5es"],
     ["toy food", "https://youtu.be/gVvhxwtFsnE"],
     ["cooking", "https://www.youtube.com/watch?v=K5tVbVu9Mkg"],
+    ["gypsy", "https://youtu.be/wV2rM672HhE"],
+    ["mass destruction", "https://youtu.be/G68mUAPqXcY"],
+    ["corrupted systems", "https://youtu.be/M1yQAECAMXM"],
+    ["boolet", "https://youtu.be/EqkESXkkJNQ"],
+    ["off limit", "https://youtu.be/dHJfafgLxBw"],
+    ["sad violin", "https://youtu.be/gIuotFZnBtk"],
+    ["you better watch out", "https://youtu.be/tI0o4WwpXTY"],
+    ["he's gonna find out", "https://youtu.be/tI0o4WwpXTY"],
+    ["api", "https://youtu.be/nSKp2StlS6s"],
+
 
     
     //things he don't like
     ["botter", "Hey hey hey, don't use the b word"],
     ["eat shit", "and die"],
     ["objection", "Sustained!"],
+    ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests"],
 
     //corrections
     ["magpie", "*Piemag"],
@@ -80,7 +91,6 @@ module.exports.pairs = [
     ["coyote", "*Yoot"],
     ["youre", "*you're"],
     ["breathtaking", "You're breathtaking!"],
-    ["good bot", "Thanks!"],
 
     //things he likes
     ["jackdaw", "Jackdaws are precious."],    
@@ -89,6 +99,7 @@ module.exports.pairs = [
     ["interjectionbot", "Hey, that's me!"],
     ["brainfuck", "I love @BrainfuckingBot"],
     ["interject", "Objection! https://youtu.be/W8QRExBfQhs"],
+    ["good bot", "Thanks, I hope you mean me!"],
     
     //baseline test
     ["baseline", "And blood-black nothingness began to spin... A system of cells interlinked within cells interlinked within cells interlinked within one stem... And dreadfully distinct against the dark, a tall white fountain played."],
@@ -108,6 +119,7 @@ module.exports.pairs = [
     ["bleep", "bloop"],
     ["shrug", "¯\\_(ツ)_/¯"],
 
+    ["", ""],
     ["", ""],
     ["", ""],
     ["", ""],
