@@ -72,6 +72,8 @@ module.exports.pairs = [
     ["he's gonna find out", "https://youtu.be/tI0o4WwpXTY"],
     ["api", "https://youtu.be/nSKp2StlS6s"],
     ["antiquing", "https://youtu.be/kjrpo62uGJc"],
+    ["despacito", "https://youtu.be/1PCY0-FYDNY"],
+    ["so sad", "https://youtu.be/1PCY0-FYDNY"],
     
     //things he don't like
     ["botter", "Hey hey hey, don't use the b word"],
@@ -97,6 +99,11 @@ module.exports.pairs = [
     ["brainfuck", "I love @BrainfuckingBot"],
     ["interject", "Objection! https://youtu.be/W8QRExBfQhs"],
     ["good bot", "Thanks, I hope you mean me!"],
+
+    //FF
+    ["foxyfluffs are dust", "Foxyfluffs are everything"],
+    ["foxyfluffs are everything", "Foxyfluffs are motion tweens"],
+    ["foxyfluff", "Foxyfluffs are dust on the floor"],
     
     //baseline test
     ["baseline", "And blood-black nothingness began to spin... A system of cells interlinked within cells interlinked within cells interlinked within one stem... And dreadfully distinct against the dark, a tall white fountain played."],
