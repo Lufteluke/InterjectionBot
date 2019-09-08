@@ -10,20 +10,58 @@ module.exports.pairs = [
 
 
     //links
-    ["full life", "*Cough* https://youtu.be/OHxyZaZlaOs"],
-    ["john freeman", "*Cough* https://youtu.be/OHxyZaZlaOs"],
+    ["full life", "https://youtu.be/OHxyZaZlaOs"],
+    ["john freeman", "https://youtu.be/OHxyZaZlaOs"],
     ["drink water",  "Excuse me this is important: https://www.youtube.com/watch?v=1auCmplVCsY"],
     ["drink the water",  "Excuse me this is important: https://www.youtube.com/watch?v=1auCmplVCsY"],
+    ["bodywash", "POOOOWEEEEER https://youtu.be/XpJvLd2H65U"],
+    ["old spice", "POOOOWEEEEER https://youtu.be/XpJvLd2H65U"],
+    ["shantae", "POOOOWEEEEER https://youtu.be/XpJvLd2H65U"],
+    ["octagon", "https://youtu.be/7ziWe_oNb58"],
+    ["cash money", "https://youtu.be/TWaP-RnGocg"],
+    ["josh", "Hey Josh, look at this huge moth that I found https://www.youtube.com/watch?v=B211aVOdvpc"],
+    ["stew", "https://youtu.be/HnyGSl3K-IE"],
+    ["too hot", "https://youtu.be/XhIBegli6dE"],
+    ["tranquility", "https://youtu.be/SHvhps47Lmc"],
+    ["i'm sorry", "https://m.youtube.com/watch?v=lrC9PS0cYqY"],
+    ["human sacrifice", "https://youtu.be/ADjma1rcm8k"],
+    ["llama", "https://youtu.be/KMYN4djSq7o"],
+    ["ebaum", "https://www.youtube.com/watch?v=BijChf8ROJU"],
+    ["ultimate battle", "https://youtu.be/4WgT9gy4zQA"],
+    ["friday", "https://m.youtube.com/watch?v=kfVsfOSbJY0"],
+    ["ea sports", "https://youtu.be/cYPgRV85c5g"],
+    ["legal", "https://www.youtube.com/watch?v=b7UXig7_-Rg"],
+    ["apathy", "https://www.youtube.com/watch?v=Xb7YRaOQzf0"],
+    ["the bank", "https://youtu.be/FOt03jAqI_k"],
+    ["Scootaloo", "https://youtu.be/pOPvlA8jZjQ"],
+    ["scoot da burbs", "https://youtu.be/Ag0yDQ4NLfU?t=47"],
+    ["mario", "https://m.youtube.com/watch?v=yr_Rpk9HR1g"],
+    ["safri duo", "https://m.youtube.com/watch?v=NuTPK1veaQA"],
+    ["eguegu", "https://www.youtube.com/watch?v=3-rfBsWmo0M"],
+    ["windows", "https://www.youtube.com/watch?v=AGHXao3Eu64"],
+
     
     //things he don't like
     ["botter", "Hey hey hey, don't use the b word"],
     ["eat shit", "and die"],
-    ["youre", "*you're / your"],
+    ["objection", "Sustained!"],
+    ["interject", "Objection! https://youtu.be/W8QRExBfQhs"],
+
+    //corrections
+    ["magpie", "*Piemag"],
+    ["raccoon", "*Washbear"],
+    ["hedgehog", "*Hodgehedge"],
+    ["hyena", "*Yeen"],
+    ["hedgehog", "*Hodgehedge"],
+    ["coyote", "*Yoot"],
+    ["youre", "*you're"],
+    ["breathtaking", "You're breathtaking"],
 
     //things he likes
-    ["jackdaw", "Jackdaws are precious"],
-    ["trains", "I like trains"],
+    ["jackdaw", "Jackdaws are precious."],    
+    ["trains", "I like trains."],
     ["lufbot", "I love @Lufbot!"],
+    ["interjectionbot", "Hey, that's me!"],
     ["brainfuck", "I love @BrainfuckingBot"],
     
     //baseline test
