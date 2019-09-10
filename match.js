@@ -119,7 +119,7 @@ module.exports.pairs = [
     ["tall white fountain", "A tall white fountain played."],
 
     //util
-    ["ping", "pong"],
+    ["/ping", "pong"],
     ["beep", "boop"],
     ["bleep", "bloop"],
     ["shrug", "¯\\_(ツ)_/¯"],
