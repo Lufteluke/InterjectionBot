@@ -74,11 +74,12 @@ module.exports.pairs = [
     ["antiquing", "https://youtu.be/kjrpo62uGJc"],
     ["despacito", "https://youtu.be/1PCY0-FYDNY"],
     ["so sad", "https://youtu.be/1PCY0-FYDNY"],
+    ["wolfjob", "https://youtu.be/LCLauZci0zc"],
     
     //things he don't like
     ["botter", "Hey hey hey, don't use the b word"],
     ["eat shit", "and die"],
-    ["objection", "Sustained!"],
+    ["objection", "https://youtu.be/W8QRExBfQhs"],
     ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests"],
 
     //corrections
@@ -96,8 +97,8 @@ module.exports.pairs = [
     ["trains", "I like trains."],
     ["lufbot", "I love @Lufbot!"],
     ["interjectionbot", "Hey, that's me!"],
+    ["interjection bot", "Hey, that's me!"],
     ["brainfuck", "I love @BrainfuckingBot"],
-    ["interject", "Objection! https://youtu.be/W8QRExBfQhs"],
     ["good bot", "Thanks, I hope you mean me!"],
 
     //FF
