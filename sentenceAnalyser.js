@@ -6,6 +6,14 @@ module.exports.parseMessage = function (message) {
 }
 
 module.exports.parseString = function (string) {
+
+    if (string.includes("@")) {
+        if (string.includes("@interjectionbot")) {
+            return "Hi~"
+        }
+        return ""
+    }
+    
     var pairs = match.pairs
 
     for (let index = 0; index < pairs.length; index++) {
