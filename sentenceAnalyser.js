@@ -1,4 +1,6 @@
 const match = require('./match.js')
+var ignoreArray = Array(60).fill(false)
+
 
 module.exports.parseMessage = function (message) {
     const { text } = message
@@ -17,7 +19,8 @@ module.exports.parseString = function (string) {
     var pairs = match.pairs
 
     for (let index = 0; index < pairs.length; index++) {
-        if (string.includes(pairs[index][0])) {
+        if (string.includes(pairs[index][0]) && !ignoreArray[index]) {
+            ignoreArray[index] = true;
             return pairs[index][1]
         }
     }

@@ -4,6 +4,9 @@ function test (testcase) {
     console.log(sentenceAnalyser.parseString(testcase))
 }
 
-test("hi linux is cool")
-test("lanex")
-test("hello navy")
+//test("hi linux is cool")
+//test("lanex")
+//test("hello navy")
+test ("lufbot")
+test ("lufbot")
+test ("lufbot")
