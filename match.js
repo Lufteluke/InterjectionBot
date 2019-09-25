@@ -130,9 +130,8 @@ module.exports.pairs = [
 ]
 
 function repeat(lines, str) {
-    
     var retvar = str + "\n\n"
-    for (let index = 0; index < 30; index++) {
+    for (let i = 0; i < lines; i++) {
         retvar = retvar + str + "\n\n"
     }
     return retvar;
