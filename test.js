@@ -10,3 +10,5 @@ function test (testcase) {
 test ("lufbot")
 test ("lufbot")
 test ("lufbot")
+
+test("/safety")
