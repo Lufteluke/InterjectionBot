@@ -132,7 +132,7 @@ module.exports.pairs = [
 function jack() {
     var str = "A l l   w o r k   a n d   n o   p l a y   m a k e s   J a c k   a   d u l l   b o y\n\n"
     var retvar = str
-    for (let index = 0; index < 50; index++) {
+    for (let index = 0; index < 30; index++) {
         retvar = retvar + str
     }
     return retvar;
