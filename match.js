@@ -123,17 +123,17 @@ module.exports.pairs = [
     ["bleep", "bloop"],
     ["shrug", "¯\\_(ツ)_/¯"],
 
-    ["/safety", jack()],
-    ["", ""],
+    ["/safety", repeat(30, "A l l   w o r k   a n d   n o   p l a y   m a k e s   J a c k   a   d u l l   b o y")],
+    ["nsfw", repeat(30, "Lewd owÔ")],
     ["", ""],
     ["", ""]
 ]
 
-function jack() {
-    var str = "A l l   w o r k   a n d   n o   p l a y   m a k e s   J a c k   a   d u l l   b o y\n\n"
-    var retvar = str
+function repeat(lines, str) {
+    
+    var retvar = str + "\n\n"
     for (let index = 0; index < 30; index++) {
-        retvar = retvar + str
+        retvar = retvar + str + "\n\n"
     }
     return retvar;
 } 

@@ -11,4 +11,4 @@ test ("lufbot")
 test ("lufbot")
 test ("lufbot")
 
-test("/safety")
+test("nsfw")
