@@ -125,6 +125,12 @@ module.exports.pairs = [
 
     ["/safety", repeat(30, "A l l   w o r k   a n d   n o   p l a y   m a k e s   J a c k   a   d u l l   b o y")],
     ["nsfw", repeat(30, "Lewd owÔ")],
+    ["natta", "Sleep well~"],
+    ["awoo", "Awoooooo~"],
+    ["ur mom", "🔥"],
+    ["ur face", "🔥"],
+    ["no u", "🔥"],
+    ["kill me", "You need to suffer along with the rest of us a while longer"],
     ["", ""],
     ["", ""]
 ]
