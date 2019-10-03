@@ -75,6 +75,8 @@ module.exports.pairs = [
     ["despacito", "https://youtu.be/1PCY0-FYDNY"],
     ["so sad", "https://youtu.be/1PCY0-FYDNY"],
     ["wolfjob", "https://youtu.be/LCLauZci0zc"],
+    ["tantric suicide", "https://youtu.be/OxPyN6IK1tM"],
+    ["bird up", "https://youtu.be/gxR50HxH48E"],
 
     //things he don't like
     ["eat shit", "and die"],
@@ -131,6 +133,7 @@ module.exports.pairs = [
     ["ur face", "🔥"],
     ["no u", "🔥"],
     ["kill me", "You need to suffer along with the rest of us a while longer"],
+    ["", ""],
     ["", ""],
     ["", ""]
 ]
