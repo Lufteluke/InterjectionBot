@@ -7,8 +7,11 @@ function test (testcase) {
 //test("hi linux is cool")
 //test("lanex")
 //test("hello navy")
-test ("lufbot")
-test ("lufbot")
-test ("lufbot")
+//est("nsfw")
+//test ("lufbot")
 
-test("nsfw")
+
+//test ("1")
+test ("surely, you can be serious")
+test ("don't drink the water")
+//test ("lufbot")
