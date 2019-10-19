@@ -13,5 +13,7 @@ function test (testcase) {
 
 //test ("1")
 test ("surely, you can be serious")
-test ("don't drink the water")
+test ("foxyfluffs")
+test ("foxyfluffs are dust on the floor")
+test ("foxyfluffs are everything")
 //test ("lufbot")
