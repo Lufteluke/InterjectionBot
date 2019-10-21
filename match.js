@@ -21,7 +21,7 @@ module.exports.pairs = [
     [
         [//or
             ["drink", "water"]
-        ],"Don't drink the water! https://youtu.be/watch?v=1auCmplVCsY"
+        ],"Don't drink the water! https://youtu.be/1auCmplVCsY"
     ],
     [
         [//or
@@ -30,34 +30,36 @@ module.exports.pairs = [
             "shantae"
         ],"POOOOWEEEEER https://youtu.be/XpJvLd2H65U"
     ],
-    ["pragnent", "https://youtu.be/watch?v=EShUeudtaFg"],
-    ["octagon", "https://youtu.be/7ziWe_oNb58"],
-    ["cash money", "https://youtu.be/TWaP-RnGocg"],
+    [["pragnent", "pregnant", "pragenet"], "How is pragnent formed? https://youtu.be/EShUeudtaFg"],
+    ["octagon", "An octagon has 8 awesome angles. https://youtu.be/7ziWe_oNb58"],
+    ["cash money", "This is so not cash money! https://youtu.be/TWaP-RnGocg"],
     [
         [//or
             "moth",
             "josh"
-        ],"Hey Josh, look at this huge moth that I found https://youtu.be/watch?v=B211aVOdvpc"
+        ],"Hey Josh, look at this huge moth that I found https://youtu.be/B211aVOdvpc"
     ],
-    ["stew", "https://youtu.be/HnyGSl3K-IE"],
-    ["too hot", "https://youtu.be/XhIBegli6dE"],
-    ["tranquility", "https://youtu.be/SHvhps47Lmc"],
-    ["i'm sorry", "https://youtu.be/watch?v=lrC9PS0cYqY"],
-    ["human sacrifice", "https://youtu.be/ADjma1rcm8k"],
-    ["llama", "https://youtu.be/KMYN4djSq7o"],
-    ["ebaum", "https://youtu.be/watch?v=BijChf8ROJU"],
-    ["ultimate battle", "https://youtu.be/4WgT9gy4zQA"],
-    ["it's friday", "https://youtu.be/watch?v=kfVsfOSbJY0"],
+    ["stew", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
+    ["too hot", "The sun is too hot! https://youtu.be/XhIBegli6dE"],
+    ["tranquil", "I need peace and tranquility! https://youtu.be/SHvhps47Lmc"],
+    ["i'm sorry", "Oh shit, I'm sorry. https://youtu.be/lrC9PS0cYqY"],
+    ["human sacrifice", "Soon, humans. https://youtu.be/ADjma1rcm8k"],
+    ["llama", "Here's a llama! https://youtu.be/KMYN4djSq7o"],
+    ["ebaum", "This is definitively relevant still. https://youtu.be/BijChf8ROJU"],
+    ["duck", "I heard ducks! https://youtu.be/MtN1YnoL46Q"],
+    [[["ultimate", "battle"]], "Let's fight! https://youtu.be/4WgT9gy4zQA"],
+    ["it's friday", "It's friday, my dudes https://youtu.be/kfVsfOSbJY0"],
     [
         [//or
             "ea sports",
             "it's only a game"
         ],"It's only a game, why are you so mad? https://youtu.be/cYPgRV85c5g"
     ],
-    ["legal", "Is that legal? https://youtu.be/watch?v=b7UXig7_-Rg"],
-    ["apathy", "Let's dance~ https://youtu.be/watch?v=Xb7YRaOQzf0"],
+    [[["is", "that", "legal"]], "Is that legal? https://youtu.be/b7UXig7_-Rg"
+    ],
+    ["apathy", "Let's dance~ https://youtu.be/Xb7YRaOQzf0"],
     ["the bank", "I RESIGN TODAY AS PRESIDENT OF   T H E   B A N K https://youtu.be/FOt03jAqI_k"],
-    ["scootaloo", "https://youtu.be/pOPvlA8jZjQ"],
+    ["scootaloo", "*confused blinking* https://youtu.be/pOPvlA8jZjQ"],
     [
         [//or
             [//and
@@ -65,72 +67,69 @@ module.exports.pairs = [
                 ["da", "the"],
                 ["burbs", "birds"]
             ]
-        ],"https://youtu.be/Ag0yDQ4NLfU?t=47"
+        ],"Scoot da birds! https://youtu.be/Ag0yDQ4NLfU?t=47"
     ],
-    ["mario", "https://youtu.be/watch?v=yr_Rpk9HR1g"],
-    ["safri duo", "https://youtu.be/watch?v=NuTPK1veaQA"],
-    ["eguegu", "https://youtu.be/watch?v=3-rfBsWmo0M"],
-    ["windows", "https://youtu.be/watch?v=AGHXao3Eu64"],
-    ["furby", "https://youtu.be/watch?v=GYLBjScgb7o"],
-    ["no money", "https://youtu.be/AWGt2AOP2bs"],
-    ["state nightmare", "https://youtu.be/watch?v=CqORW1DsyX0"],
+    ["mario", "Super Mapno brother is my favourite game https://youtu.be/yr_Rpk9HR1g"],
+    ["safri duo", "Bathroom music: https://youtu.be/NuTPK1veaQA"],
+    [["eguegu", "decearing"], "Decearing egg! https://youtu.be/3-rfBsWmo0M"],
+    ["windows", "Windows is in danger! https://youtu.be/AGHXao3Eu64"],
+    ["furby", "Release them! https://youtu.be/GYLBjScgb7o"],
+    ["no money", "Here, suck a cock! https://youtu.be/AWGt2AOP2bs"],
+    ["state nightmare", "Have you had a state nightmare recently? https://youtu.be/CqORW1DsyX0"],
     ["eraser", "Because I am a good eraser https://youtu.be/1kJwpINVfo8"],
     ["erased", "There are many things that need to be erased https://youtu.be/efjjmpOVzRg?t=135"],
-    ["warcrime", "https://youtu.be/aY1XpTzLn0A"],
-    ["kebab", "https://youtu.be/q9HzqxwKfiM"],
+    [
+        [
+            ["war", "crime"], 
+            ["apple", "jack"]
+        ], "AJ is a wanted warcriminal in 10 countries https://youtu.be/aY1XpTzLn0A"
+    ],
+    [["kebab", "falafel"], "Remove kebab! https://youtu.be/q9HzqxwKfiM"],
     [
         [//or
             ["dream", "cry"]
-        ],"https://youtu.be/watch?v=4bHww53BaLg"
+        ],"Best song! https://youtu.be/4bHww53BaLg"
     ],
-    ["konata", "https://youtu.be/9gvswd1I8qo"],
-    ["rapist", "What's worse than a rapist? https://youtu.be/watch?v=bfCR0dEDO1A"],
-    ["6502", "https://youtu.be/watch?v=HDMkw6lnzmI"],
-    ["scout", "https://youtu.be/24Eh2-DZTgQ"],
+    ["konata", "I haven't even seen the show! https://youtu.be/9gvswd1I8qo"],
+    ["rapist", "What's worse than a rapist? https://youtu.be/bfCR0dEDO1A"],
+    ["6502", "I could probably run on a 6502! https://youtu.be/HDMkw6lnzmI"],
+    ["scout", "I am the Scout! https://youtu.be/24Eh2-DZTgQ"],
     [
         [//or
             ["reality", "back"]//and
-        ],"https://youtu.be/fV3nflAQ99w"
+        ],"Snap back to reality! https://youtu.be/fV3nflAQ99w"
     ],
-    ["you can do it", "https://youtu.be/watch?v=rCvtIdLxu1Y"],
-    ["spaghetti", "https://youtu.be/SW-BU6keEUw"],
-    ["double king", "https://youtu.be/watch?v=w_MSFkZHNi4"],
-    ["sharing is caring", "https://youtu.be/VTlB9ibTMSo?t=49"],
-    ["enemy crab", "https://youtu.be/watch?v=7ktHrtxUHbg"],
-    ["luigi", "https://youtu.be/watch?v=15nNY7uofNw"],
-    ["brody", "https://youtu.be/watch?v=YqBLxzn6kcU"],
-    ["limewire", "https://youtu.be/watch?v=IBH4g_ua5es"],
-    ["toy food", "https://youtu.be/gVvhxwtFsnE"],
-    ["cooking", "https://youtu.be/watch?v=K5tVbVu9Mkg"],
-    ["gypsy", "https://youtu.be/wV2rM672HhE"],
-    ["mass destruction", "https://youtu.be/G68mUAPqXcY"],
-    ["corrupted systems", "https://youtu.be/M1yQAECAMXM"],
-    ["boolet", "https://youtu.be/EqkESXkkJNQ"],
-    ["off limit", "https://youtu.be/dHJfafgLxBw"],
-    ["sad violin", "https://youtu.be/gIuotFZnBtk"],
-    ["you better watch out", "https://youtu.be/tI0o4WwpXTY"],
-    [
-        [//or
-            ["he", "gonna find out"]
-        ], "https://youtu.be/tI0o4WwpXTY"
-    ],
+    ["you can do it", "Yeah, baby! https://youtu.be/rCvtIdLxu1Y"],
+    ["spaghetti", "Mom's is the best! https://youtu.be/SW-BU6keEUw"],
+    ["double king", "The fun has been doubled! https://youtu.be/w_MSFkZHNi4"],
+    ["sharing is caring", "Shaaaaaring! https://youtu.be/VTlB9ibTMSo?t=49"],
+    ["enemy crab", "Historically correct documentary: https://youtu.be/7ktHrtxUHbg"],
+    ["luigi", "Weegeeboardhttps://youtu.be/15nNY7uofNw"],
+    ["brody", "Reach for the stars! https://youtu.be/YqBLxzn6kcU"],
+    [["limewire", "pirat"], "Do what you want! https://youtu.be/IBH4g_ua5es"],
+    ["toy food", "Not real food, do not eat! https://youtu.be/gVvhxwtFsnE"],
+    ["cooking", "You gotta do the booking by the cook! https://youtu.be/K5tVbVu9Mkg"],
+    ["gypsy", "Parody redubs are not allowed to have this good music. https://youtu.be/wV2rM672HhE"],
+    ["mass destruction", "Dubstep is a WoMD. https://youtu.be/G68mUAPqXcY"],
+    ["corrupted systems", "[shameless plug] https://youtu.be/M1yQAECAMXM"],
+    [["boolet", "bulletproof"], "Booletproof! https://youtu.be/EqkESXkkJNQ"],
+    [["off limit", "illegal", "403", ["thomas", "tank"]], "EH EH EH EH EH https://youtu.be/dHJfafgLxBw"],
+    ["sad violin", "Very sad :c https://youtu.be/gIuotFZnBtk"],
+    [["better watch out", "gonna find out"], "He's gonna find out! https://youtu.be/tI0o4WwpXTY"],
     [" api", "https://youtu.be/nSKp2StlS6s"],
-    ["antiquing", "https://youtu.be/kjrpo62uGJc"],
-    ["despacito", "https://youtu.be/1PCY0-FYDNY"],
+    ["antiqu", "Judge Dredge! https://youtu.be/kjrpo62uGJc"],
+    [["despacito", ["so sad", "despacito"]], "This is so sad! https://youtu.be/1PCY0-FYDNY"],
     [
-        [//or
-            "so sad",
-            "despacito"
-        ],"https://youtu.be/1PCY0-FYDNY"
+        ,"https://youtu.be/1PCY0-FYDNY"
     ],
-    ["wolfjob", "https://youtu.be/LCLauZci0zc"],
-    ["tantric suicide", "https://youtu.be/OxPyN6IK1tM"],
-    ["bird up", "https://youtu.be/gxR50HxH48E"],
-    ["bitch", "https://youtu.be/SRhvBu65HAo"],
+    ["wolfjob", "More wolfjob! https://youtu.be/LCLauZci0zc"],
+    [["tantric", "external world"], "Tantric suicide. https://youtu.be/OxPyN6IK1tM"],
+    ["bird up", "BIRD UP! https://youtu.be/gxR50HxH48E"],
+    ["bitch", "Bitch up! https://youtu.be/SRhvBu65HAo"],
 
     //things he don't like
     ["eat shit", "and die"],
-    ["objection", "https://youtu.be/W8QRExBfQhs"],
+    ["objection", "OBJECTION! https://youtu.be/W8QRExBfQhs"],
     ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests"],
 
     //corrections
