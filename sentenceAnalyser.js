@@ -1,5 +1,7 @@
 const match = require('./match.js')
-let ignoreArray = Array(match.pairs.length).fill(false)
+let rules = match.pairs
+let antirules = match.ignore
+let ignoreArray = Array(rules.length).fill(false)
 
 
 module.exports.parseMessage = function (message) {
@@ -9,6 +11,11 @@ module.exports.parseMessage = function (message) {
 
 module.exports.parseString = function (string) {
 
+    if (string.includes("/quiet")) {
+        ignoreArray.fill(true)
+        return "🤐"
+    }
+
     if (string.includes("@")) {
         if (string.includes("@interjectionbot")) {
             return "Hi~"
@@ -16,17 +23,17 @@ module.exports.parseString = function (string) {
         return ""
     }
 
-    if (string.includes("/quiet")) {
-        ignoreArray.fill(true)
-        return "🤐"
+
+    for (let i = 0; i < antirules.length; i++) {
+        if (matchList(antirules[i], string, false)) {
+            return ""
+        }
     }
 
-    let rule = match.pairs
-
-    for (let i = 0; i < rule.length; i++) {
-        if (!ignoreArray[i] && matchList(rule[i][0], string, false)) {
+    for (let i = 0; i < rules.length; i++) {
+        if (!ignoreArray[i] && matchList(rules[i][0], string, false)) {
             ignoreArray[i] = true
-            return rule[i][1]
+            return rules[i][1]
         }
     }
     return ""
@@ -36,8 +43,8 @@ function matchList(match, src, matchAll) {
     let retVal = matchAll
     
     if (Array.isArray(match)) {
-        for (let j = 0; j < match.length; j++) {
-            let check = matchList(match[j], src, !matchAll)
+        for (let i = 0; i < match.length; i++) {
+            let check = matchList(match[i], src, !matchAll)
             retVal = (retVal && check) || (!matchAll && (check || retVal))
         }
         return retVal

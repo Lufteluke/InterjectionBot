@@ -33,7 +33,6 @@ module.exports.pairs = [
     [["pragnent", "pregnant", "pragenet"], "How is pragnent formed? https://youtu.be/EShUeudtaFg"],
     ["octagon", "An octagon has 8 awesome angles. https://youtu.be/7ziWe_oNb58"],
     ["cash money", "This is so not cash money! https://youtu.be/TWaP-RnGocg"],
-    ["mother",""], //ignore mother
     [
         [//or
             "moth",
@@ -238,10 +237,9 @@ module.exports.pairs = [
             "kms"
         ],"You need to suffer along with the rest of us a while longer"
     ],
-    ["", ""],//will always match
 
 
-    //UNREACHABLE
+
     //first layer is "or", second is "and", alternates down in layers recursively
     [//simple wordmatch for 1
         "1",
@@ -260,7 +258,11 @@ module.exports.pairs = [
             "1",
             "2"
         ],""//answer
-    ]
+    ]s
+]
+
+module.exports.ignore = [
+    "mother"
 ]
 
 function repeat(lines, str) {
