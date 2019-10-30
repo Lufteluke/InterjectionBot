@@ -33,6 +33,7 @@ module.exports.pairs = [
     [["pragnent", "pregnant", "pragenet"], "How is pragnent formed? https://youtu.be/EShUeudtaFg"],
     ["octagon", "An octagon has 8 awesome angles. https://youtu.be/7ziWe_oNb58"],
     ["cash money", "This is so not cash money! https://youtu.be/TWaP-RnGocg"],
+    ["mother",""], //ignore mother
     [
         [//or
             "moth",
@@ -42,7 +43,11 @@ module.exports.pairs = [
     ["stew", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
     ["too hot", "The sun is too hot! https://youtu.be/XhIBegli6dE"],
     ["tranquil", "I need peace and tranquility! https://youtu.be/SHvhps47Lmc"],
-    ["i'm sorry", "Oh shit, I'm sorry. https://youtu.be/lrC9PS0cYqY"],
+    [
+        [//or
+            ["shit", "sorry"]//and
+        ], "Oh shit, I'm sorry. https://youtu.be/lrC9PS0cYqY"
+    ],
     ["human sacrifice", "Soon, humans. https://youtu.be/ADjma1rcm8k"],
     ["llama", "Here's a llama! https://youtu.be/KMYN4djSq7o"],
     ["ebaum", "This is definitively relevant still. https://youtu.be/BijChf8ROJU"],
@@ -52,7 +57,7 @@ module.exports.pairs = [
     [
         [//or
             "ea sports",
-            "it's only a game"
+            "only a game"
         ],"It's only a game, why are you so mad? https://youtu.be/cYPgRV85c5g"
     ],
     [[["is", "that", "legal"]], "Is that legal? https://youtu.be/b7UXig7_-Rg"
@@ -72,7 +77,7 @@ module.exports.pairs = [
     ["mario", "Super Mapno brother is my favourite game https://youtu.be/yr_Rpk9HR1g"],
     ["safri duo", "Bathroom music: https://youtu.be/NuTPK1veaQA"],
     [["eguegu", "decearing", "えぐ"], "Decearing egg! https://youtu.be/3-rfBsWmo0M"],
-    ["windows", "Windows is in danger! https://youtu.be/AGHXao3Eu64"],
+    [["windows", "danger"], "Windows is in danger! https://youtu.be/AGHXao3Eu64"],
     ["furby", "Release them! https://youtu.be/GYLBjScgb7o"],
     ["no money", "Here, suck a cock! https://youtu.be/AWGt2AOP2bs"],
     ["state nightmare", "Have you had a state nightmare recently? https://youtu.be/CqORW1DsyX0"],
@@ -93,7 +98,7 @@ module.exports.pairs = [
     ["konata", "I haven't even seen the show! https://youtu.be/9gvswd1I8qo"],
     ["rapist", "What's worse than a rapist? https://youtu.be/bfCR0dEDO1A"],
     ["6502", "I could probably run on a 6502! https://youtu.be/HDMkw6lnzmI"],
-    ["scout", "I am the Scout! https://youtu.be/24Eh2-DZTgQ"],
+    [["scout", "bonk"], "I am the Scout! https://youtu.be/24Eh2-DZTgQ"],
     [
         [//or
             ["reality", "back"]//and
@@ -102,14 +107,14 @@ module.exports.pairs = [
     ["you can do it", "Yeah, baby! https://youtu.be/rCvtIdLxu1Y"],
     ["spaghetti", "Mom's is the best! https://youtu.be/SW-BU6keEUw"],
     ["double king", "The fun has been doubled! https://youtu.be/w_MSFkZHNi4"],
-    ["sharing is caring", "Shaaaaaring! https://youtu.be/VTlB9ibTMSo?t=49"],
+    [[["sharing", "caring"]], "Shaaaaaring! https://youtu.be/VTlB9ibTMSo?t=49"],
     ["enemy crab", "Historically correct documentary: https://youtu.be/7ktHrtxUHbg"],
     ["luigi", "Weegeeboardhttps://youtu.be/15nNY7uofNw"],
     ["brody", "Reach for the stars! https://youtu.be/YqBLxzn6kcU"],
     [["limewire", "pirat"], "Do what you want! https://youtu.be/IBH4g_ua5es"],
     ["toy food", "Not real food, do not eat! https://youtu.be/gVvhxwtFsnE"],
     ["cooking", "You gotta do the booking by the cook! https://youtu.be/K5tVbVu9Mkg"],
-    ["gypsy", "Parody redubs are not allowed to have this good music. https://youtu.be/wV2rM672HhE"],
+    ["gypsy", "Parody redubs are not allowed to be this good. https://youtu.be/wV2rM672HhE"],
     ["mass destruction", "Dubstep is a WoMD. https://youtu.be/G68mUAPqXcY"],
     ["corrupted systems", "[shameless plug] https://youtu.be/M1yQAECAMXM"],
     [["boolet", "bulletproof"], "Booletproof! https://youtu.be/EqkESXkkJNQ"],
@@ -146,7 +151,7 @@ module.exports.pairs = [
             [//and
                 "surely", 
                 "you", 
-                ["can", "can't"], 
+                "can", 
                 "be serious"
             ]
         ], "I am serious...And don't call me Shirley"
@@ -194,12 +199,12 @@ module.exports.pairs = [
     ["baseline", "And blood-black nothingness began to spin... A system of cells interlinked within cells interlinked within cells interlinked within one stem... And dreadfully distinct against the dark, a tall white fountain played."],
     ["within cells interlinked", "Within cells interlinked."],
     ["within one stem", "Within one stem."],
-    ["cells", "Cells."],
-    ["interlinked", "Interlinked."],
-    //["dark", "Dark."],
+    [". cells", "Cells."],
+    [". interlinked", "Interlinked."],
+    [". dark", "Dark."],
     ["dreadfully distinct", "Dreadfully distinct."],
-    ["dreadfully", "Dreadfully."],
-    ["distinct", "Distinct."],
+    [". dreadfully", "Dreadfully."],
+    [". distinct", "Distinct."],
     ["tall white fountain", "A tall white fountain played."],
 
     //util

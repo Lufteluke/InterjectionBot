@@ -1,5 +1,5 @@
 const match = require('./match.js')
-let ignoreArray = Array(60).fill(false)
+let ignoreArray = Array(match.pairs.length).fill(false)
 
 
 module.exports.parseMessage = function (message) {
@@ -15,7 +15,12 @@ module.exports.parseString = function (string) {
         }
         return ""
     }
-    
+
+    if (string.includes("/quiet")) {
+        ignoreArray.fill(true)
+        return "🤐"
+    }
+
     let rule = match.pairs
 
     for (let i = 0; i < rule.length; i++) {
