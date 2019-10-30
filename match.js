@@ -135,7 +135,8 @@ module.exports.pairs = [
     //things he don't like
     ["eat shit", "and die"],
     ["objection", "OBJECTION! https://youtu.be/W8QRExBfQhs"],
-    ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests"],
+    ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests. If you want me to STFU for a while, use /quiet"],
+    [[["quiet", "bot"]], "If you want me to STFU for a while, use /quiet"],
 
     //corrections
     ["magpie", "*Piemag"],
@@ -161,8 +162,7 @@ module.exports.pairs = [
     ["jackdaw", "Jackdaws are precious."],
     ["trains", "I like trains."],
     ["lufbot", "I love @Lufbot!"],
-    ["interjectionbot", "Hey, that's me!"],
-    ["interjection bot", "Hey, that's me!"],
+    [[["interjection", "bot"]], "Hey, that's me!"],
     ["brainfuck", "I love @BrainfuckingBot"],
     ["good bot", "Thanks, I hope you mean me!"],
     ["awoo", "Awoooooo~"],
