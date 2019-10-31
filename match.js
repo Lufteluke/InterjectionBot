@@ -258,7 +258,7 @@ module.exports.pairs = [
             "1",
             "2"
         ],""//answer
-    ]s
+    ]
 ]
 
 module.exports.ignore = [
