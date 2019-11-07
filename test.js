@@ -2,7 +2,7 @@ const sentenceAnalyser = require('./sentenceAnalyser')
 
 function test (testcase) {
     //console.log(sentenceAnalyser.parseString(testcase, null))
-    console.log(sentenceAnalyser.parseMessage({text: testcase, chat: {id: -1}}))
+    console.log(sentenceAnalyser.parseMessage({text: testcase, chat: {id: -101}}))
 }
 
 //test("hi linux is cool")
@@ -13,6 +13,8 @@ function test (testcase) {
 
 
 //test ("1")
+test ("surely, you can be serious")
+test ("surely, you can be serious")
 test ("surely, you can be serious")
 test ("mother")
 test ("/quiet")

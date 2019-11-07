@@ -13,7 +13,7 @@ module.exports.parseMessage = function (message) {
 
     for (let i = 0; i < chatIgnoreArrays.length; i++) {
         if (chatIgnoreArrays[i][0] == cId) {
-            ignoreArray = chatIgnoreArrays[i][1]
+            iArray = chatIgnoreArrays[i][1]
             foundId = true
             break
         }
@@ -21,7 +21,8 @@ module.exports.parseMessage = function (message) {
 
     if (!foundId) {
         chatIgnoreArrays.push([cId, Array(rules.length).fill(false)])
-        ignoreArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
+            console.log("Making new array for chat ID " + cId)
+            iArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
     }
     return exports.parseString(text.toLowerCase(), iArray)
 }
