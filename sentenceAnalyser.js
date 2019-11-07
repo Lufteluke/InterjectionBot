@@ -1,19 +1,44 @@
 const match = require('./match.js')
 let rules = match.pairs
 let antirules = match.ignore
-let ignoreArray = Array(rules.length).fill(false)
+let chatIgnoreArrays = [[-1, Array(rules.length).fill(false)]]
+let ignoreArray = chatIgnoreArrays[0][1]
 
 
 module.exports.parseMessage = function (message) {
     const { text } = message
-    return exports.parseString(text.toLowerCase())
+    const cId = message.chat.id
+    let iArray = ignoreArray
+    let foundId = false
+
+    for (let i = 0; i < chatIgnoreArrays.length; i++) {
+        if (chatIgnoreArrays[i][0] == cId) {
+            ignoreArray = chatIgnoreArrays[i][1]
+            foundId = true
+            break
+        }
+    }
+
+    if (!foundId) {
+        chatIgnoreArrays.push([cId, Array(rules.length).fill(false)])
+        ignoreArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
+    }
+    return exports.parseString(text.toLowerCase(), iArray)
 }
 
-module.exports.parseString = function (string) {
+module.exports.parseString = function (string, iArray) {
+    if (iArray == null) {
+        iArray = ignoreArray;
+    }
 
     if (string.includes("/quiet")) {
-        ignoreArray.fill(true)
+        iArray.fill(true)
         return "🤐"
+    }
+
+    if (string.includes("/unquiet")) {
+        iArray.fill(false)
+        return "Waffle daffle submarine"
     }
 
     if (string.includes("@")) {
@@ -31,8 +56,8 @@ module.exports.parseString = function (string) {
     }
 
     for (let i = 0; i < rules.length; i++) {
-        if (!ignoreArray[i] && matchList(rules[i][0], string, false)) {
-            ignoreArray[i] = true
+        if (!iArray[i] && matchList(rules[i][0], string, false)) {
+            iArray[i] = true
             return rules[i][1]
         }
     }
@@ -41,7 +66,7 @@ module.exports.parseString = function (string) {
 
 function matchList(match, src, matchAll) {
     let retVal = matchAll
-    
+
     if (Array.isArray(match)) {
         for (let i = 0; i < match.length; i++) {
             let check = matchList(match[i], src, !matchAll)
