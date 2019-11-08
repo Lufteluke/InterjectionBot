@@ -3,6 +3,7 @@ let rules = match.pairs
 let antirules = match.ignore
 let chatIgnoreArrays = [[-1, Array(rules.length).fill(false)]]
 let ignoreArray = chatIgnoreArrays[0][1]
+var lastMessage = null
 
 
 module.exports.parseMessage = function (message) {
@@ -24,7 +25,9 @@ module.exports.parseMessage = function (message) {
             console.log("Making new array for chat ID " + cId)
             iArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
     }
-    return exports.parseString(text.toLowerCase(), iArray)
+    var retVal = exports.parseString(text.toLowerCase(), iArray)
+    lastMessage = message
+    return retVal
 }
 
 module.exports.parseString = function (string, iArray) {
@@ -37,16 +40,25 @@ module.exports.parseString = function (string, iArray) {
         return "🤐"
     }
 
-    if (string.includes("/unquiet")) {
+    else if (string.includes("/quiet")) {
+        iArray.fill(true)
+        return "🤐"
+    }
+
+    else if (string.includes("/unquiet")) {
         iArray.fill(false)
         return "Waffle daffle submarine"
     }
 
-    if (string.includes("@")) {
+    else if (string.includes("@")) {
         if (string.includes("@interjectionbot")) {
             return "Hi~"
         }
         return ""
+    }
+
+    else if (string.includes("echo last")) {
+        return JSON.stringify(lastMessage)
     }
 
 

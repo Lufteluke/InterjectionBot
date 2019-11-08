@@ -16,6 +16,7 @@ function test (testcase) {
 test ("surely, you can be serious")
 test ("surely, you can be serious")
 test ("surely, you can be serious")
+test ("echo last")
 test ("mother")
 test ("/quiet")
 test ("foxyfluffs")

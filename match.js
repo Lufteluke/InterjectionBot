@@ -76,7 +76,7 @@ module.exports.pairs = [
     ["mario", "Super Mapno brother is my favourite game https://youtu.be/yr_Rpk9HR1g"],
     ["safri duo", "Bathroom music: https://youtu.be/NuTPK1veaQA"],
     [["eguegu", "decearing", "えぐ"], "Decearing egg! https://youtu.be/3-rfBsWmo0M"],
-    [["windows", "danger"], "Windows is in danger! https://youtu.be/AGHXao3Eu64"],
+    [[["windows", "danger"]], "Windows is in danger! https://youtu.be/AGHXao3Eu64"],
     ["furby", "Release them! https://youtu.be/GYLBjScgb7o"],
     ["no money", "Here, suck a cock! https://youtu.be/AWGt2AOP2bs"],
     ["state nightmare", "Have you had a state nightmare recently? https://youtu.be/CqORW1DsyX0"],
