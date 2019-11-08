@@ -165,6 +165,7 @@ module.exports.pairs = [
     ["brainfuck", "I love @BrainfuckingBot"],
     ["good bot", "Thanks, I hope you mean me!"],
     ["awoo", "Awoooooo~"],
+    ["praise be", "Praise be!"],
 
     //FF
     [
