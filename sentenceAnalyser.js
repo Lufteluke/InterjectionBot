@@ -25,9 +25,7 @@ module.exports.parseMessage = function (message) {
             console.log("Making new array for chat ID " + cId)
             iArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
     }
-    var retVal = exports.parseString(text.toLowerCase(), iArray)
-    lastMessage = message
-    return retVal
+    return exports.parseString(text.toLowerCase(), iArray)
 }
 
 module.exports.parseString = function (string, iArray) {
@@ -40,27 +38,22 @@ module.exports.parseString = function (string, iArray) {
         return "🤐"
     }
 
-    else if (string.includes("/quiet")) {
+    if (string.includes("/quiet")) {
         iArray.fill(true)
         return "🤐"
     }
 
-    else if (string.includes("/unquiet")) {
+    if (string.includes("/unquiet")) {
         iArray.fill(false)
         return "Waffle daffle submarine"
     }
 
-    else if (string.includes("@")) {
+    if (string.includes("@")) {
         if (string.includes("@interjectionbot")) {
             return "Hi~"
         }
         return ""
     }
-
-    else if (string.includes("echo last")) {
-        return JSON.stringify(lastMessage)
-    }
-
 
     for (let i = 0; i < antirules.length; i++) {
         if (matchList(antirules[i], string, false)) {
