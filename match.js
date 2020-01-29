@@ -69,7 +69,7 @@ module.exports.pairs = [
             [//and
                 "scoot",
                 ["da", "the"],
-                ["burbs", "birds"]
+                ["burb", "bird", "birb"]
             ]
         ],"Scoot da birds! https://youtu.be/Ag0yDQ4NLfU?t=47"
     ],
