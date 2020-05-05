@@ -111,6 +111,9 @@ module.exports.pairs = [
     ["luigi", "Weegeeboardhttps://youtu.be/15nNY7uofNw"],
     ["brody", "Reach for the stars! https://youtu.be/YqBLxzn6kcU"],
     [["limewire", "pirat"], "Do what you want! https://youtu.be/IBH4g_ua5es"],
+    [["what is this place", "girlchan", "what are you doing up", "kenstar", "maytag", "bucket of water", "egoraptor" ["flavour", "sticks"]], "Whaaaaat is this place! https://youtu.be/_CLgpd241Aw"],
+    [["nasa pepo", "nanalan", "tomado", "shoosh", ["snudder", "mado"]], "NASA PEPO! https://youtu.be/_CLgpd241Aw"],
+    [["nrk", "bbc", "cnn", "news", "trump", "president"], "It begins..."],
     ["toy food", "Not real food, do not eat! https://youtu.be/gVvhxwtFsnE"],
     ["cooking", "You gotta do the booking by the cook! https://youtu.be/K5tVbVu9Mkg"],
     ["gypsy", "Parody redubs are not allowed to be this good. https://youtu.be/wV2rM672HhE"],
@@ -213,7 +216,7 @@ module.exports.pairs = [
     ["bleep", "bloop"],
     ["shrug", "¯\\_(ツ)_/¯"],
 
-    ["/safety", repeat(30, "A l l   w o r k   a n d   n o   p l a y   m a k e s   J a c k   a   d u l l   b o y")],
+    [["/safety", "all work and no play", "here's johnny"], repeat(30, "A l l   w o r k   a n d   n o   p l a y   m a k e s   J a c k   a   d u l l   b o y")],
     ["nsfw", repeat(30, "Lewd owÔ")],
 
     //convo
@@ -229,7 +232,9 @@ module.exports.pairs = [
             [//and
                 "your", 
                 ["face", "mom"]
-            ]
+            ],
+            "🔥",
+            "yiff"
         ],"🔥"
     ],
     [
