@@ -126,12 +126,12 @@ module.exports.pairs = [
     [["better watch out", "gonna find out"], "He's gonna find out! https://youtu.be/tI0o4WwpXTY"],
     [" api", "https://youtu.be/nSKp2StlS6s"],
     ["antiqu", "Judge Dredge! https://youtu.be/kjrpo62uGJc"],
+    ["let me see what you have", "A knife! https://youtu.be/d6gBu2Zd7Bc"],
+    [["lynks", "clay"], "https://youtu.be/453wgsWT5Ao"],
     [["despacito", ["so sad", "despacito"]], "This is so sad! https://youtu.be/1PCY0-FYDNY"],
-    [
-        ,"https://youtu.be/1PCY0-FYDNY"
-    ],
     ["wolfjob", "More wolfjob! https://youtu.be/LCLauZci0zc"],
     [["tantric", "external world"], "Tantric suicide. https://youtu.be/OxPyN6IK1tM"],
+    [["sibelius", "melts", "microwave",], "The cheese melts in the microwave, the music melts in S_ìbeli_i/u_s.  https://youtu.be/dKx1wnXClcI?t=985"],
     ["bird up", "BIRD UP! https://youtu.be/gxR50HxH48E"],
     ["bitch", "Bitch up! https://youtu.be/SRhvBu65HAo"],
 
