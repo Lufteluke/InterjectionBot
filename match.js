@@ -52,6 +52,7 @@ module.exports.pairs = [
     ["ebaum", "This is definitively relevant still. https://youtu.be/BijChf8ROJU"],
     ["duck", "I heard ducks! https://youtu.be/MtN1YnoL46Q"],
     [[["ultimate", "battle"]], "Let's fight! https://youtu.be/4WgT9gy4zQA"],
+    [[["live", "forever"], "immortal"], "This is my wife! https://youtu.be/xg29TuWo0Yo"],
     ["it's friday", "It's friday, my dudes https://youtu.be/kfVsfOSbJY0"],
     [
         [//or
