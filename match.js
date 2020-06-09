@@ -47,6 +47,11 @@ module.exports.pairs = [
             ["shit", "sorry"]//and
         ], "Oh shit, I'm sorry. https://youtu.be/lrC9PS0cYqY"
     ],
+    [
+        [//or
+            [["steven", "stephen"], "penis"]//and
+        ], "https://youtu.be/j-K-zqLNtcw"
+    ],
     ["human sacrifice", "Soon, humans. https://youtu.be/ADjma1rcm8k"],
     ["llama", "Here's a llama! https://youtu.be/KMYN4djSq7o"],
     ["ebaum", "This is definitively relevant still. https://youtu.be/BijChf8ROJU"],
