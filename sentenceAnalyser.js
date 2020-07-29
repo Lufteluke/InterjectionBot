@@ -169,7 +169,7 @@ function kmToMile (km) {
     return km/1.609
 }
 function mileToKm (mile) {
-    return mile/1.609
+    return mile*1.609
 }
 
 //weight
