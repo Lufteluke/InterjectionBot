@@ -39,7 +39,7 @@ module.exports.pairs = [
             "josh"
         ],"Hey Josh, look at this huge moth that I found https://youtu.be/B211aVOdvpc"
     ],
-    ["stew", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
+    ["stew song", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
     ["too hot", "The sun is too hot! https://youtu.be/XhIBegli6dE"],
     ["tranquil", "I need peace and tranquility! https://youtu.be/SHvhps47Lmc"],
     [
@@ -65,7 +65,7 @@ module.exports.pairs = [
     ["oblivion", "https://youtu.be/MyQn2ic2Wzw"],
     ["the store", "https://youtu.be/iRZ2Sh5-XuM"],
     ["corona", "https://youtu.be/4dPd708Sk98"],
-    ["rope", "https://youtu.be/wWLkpL1NGR8"],
+    ["bondage", "https://youtu.be/wWLkpL1NGR8"],
     ["andrew", "https://youtu.be/q-y2g9Ot5GA"],
     ["zoop", "https://youtu.be/xkABKc0QOaI"],
     ["violin", "https://youtu.be/qbw9fGx_1RU"],
@@ -75,7 +75,7 @@ module.exports.pairs = [
     ["ebaum", "This is definitively relevant still. https://youtu.be/BijChf8ROJU"],
     ["duck", "I heard ducks! https://youtu.be/MtN1YnoL46Q"],
     [["kimba", "wa wa"], "Kimba - Simba? Hmmm, suspicious. https://youtu.be/bmf7qYnhlLA"],
-    [["the end", "linkin park", "doesn't matter"], "https://youtu.be/eVTXPUF4Oz4"],
+    [["in the end", "linkin park", "doesn't matter"], "https://youtu.be/eVTXPUF4Oz4"],
     [["bethesda", "todd howard"], "https://youtu.be/uAyA0CyPIQg"],
     [["zabivaka", "putin"], "https://youtu.be/r3lsCOHiBHM"],
     [["made you think", "made ya think"], "https://youtu.be/n3RfyMhGGLE"],
@@ -140,7 +140,7 @@ module.exports.pairs = [
     ["konata", "I haven't even seen the show! https://youtu.be/9gvswd1I8qo"],
     ["rapist", "What's worse than a rapist? https://youtu.be/bfCR0dEDO1A"],
     ["6502", "I could probably run on a 6502! https://youtu.be/HDMkw6lnzmI"],
-    [["scout", "bonk"], "I am the Scout! https://youtu.be/24Eh2-DZTgQ"],
+    ["bonk", "I am the Scout! https://youtu.be/24Eh2-DZTgQ"],
     [
         [//or
             ["reality", "back"]//and
@@ -161,7 +161,7 @@ module.exports.pairs = [
     [["moon"], "Haha, you guys believe in the moon? https://youtu.be/IDx1Kh2iU6o"],
     [["nrk", "bbc", "cnn", "news", "trump", "president"], "It begins..."],
     ["toy food", "Not real food, do not eat! https://youtu.be/gVvhxwtFsnE"],
-    ["cooking", "You gotta do the booking by the cook! https://youtu.be/K5tVbVu9Mkg"],
+    [[["cook", "book"]], "You gotta do the booking by the cook! https://youtu.be/K5tVbVu9Mkg"],
     ["gypsy", "Parody redubs are not allowed to be this good. https://youtu.be/wV2rM672HhE"],
     ["mass destruction", "Dubstep is a WoMD. https://youtu.be/G68mUAPqXcY"],
     ["corrupted systems", "[shameless plug] https://youtu.be/M1yQAECAMXM"],
@@ -179,12 +179,15 @@ module.exports.pairs = [
     [["tantric", "external world"], "Tantric suicide. https://youtu.be/OxPyN6IK1tM"],
     [["sibelius", "melts", "microwave",], "The cheese melts in the microwave, the music melts in S_ìbeli_i/u_s.  https://youtu.be/dKx1wnXClcI?t=985"],
     ["bird up", "BIRD UP! https://youtu.be/gxR50HxH48E"],
-    ["bitch", "Bitch up! https://youtu.be/SRhvBu65HAo"],
+    [[["bitch", "song"]], "Bitch up! https://youtu.be/SRhvBu65HAo"],
+    ["papers please", "https://youtu.be/DbBB1j5qAFs"],
+    ["cyborg", "https://youtu.be/clIiP1H3Opw"],
+    ["aurora borealis", "https://youtu.be/qQ36Repf-ZQ"],
 
     //things he don't like
     ["eat shit", "and die"],
     ["objection", "OBJECTION! https://youtu.be/W8QRExBfQhs"],
-    ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests. If you want me to STFU for a while, use /quiet"],
+    ["bad bot", "I'm sorry if you're unhappy with me, you should ask @Lufteluke about bugs, changes and feature requests. If you want me to STFU for a while, use /quiet https://youtu.be/O2yPnnDfqpw"],
     [[["quiet", "bot"]], "If you want me to STFU for a while, use /quiet"],
 
     //corrections
