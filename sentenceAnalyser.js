@@ -3,8 +3,8 @@ let rules = match.pairs
 let antirules = match.ignore
 let chatIgnoreArrays = [[-1, Array(rules.length).fill(false)]]
 let ignoreArray = chatIgnoreArrays[0][1]
-var lastMessage = null
-
+const rxB = "(^|\\s)(-?\\d{1,25})\\.?,?(\\d{0,10})\\s?" //base and number catch
+const rxE = '($|\\W)' //end of word
 
 module.exports.parseMessage = function (message) {
     const { text } = message
@@ -21,9 +21,9 @@ module.exports.parseMessage = function (message) {
     }
 
     if (!foundId) {
-        chatIgnoreArrays.push([cId, Array(rules.length+1).fill(false)]) //it's +1 because of convert function
-            console.log("Making new array for chat ID " + cId)
-            iArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
+        chatIgnoreArrays.push([cId, Array(rules.length + 1).fill(false)]) //it's +1 because of convert function
+        console.log("Making new array for chat ID " + cId)
+        iArray = chatIgnoreArrays[chatIgnoreArrays.length - 1][1]
     }
     return exports.parseString(text.toLowerCase(), iArray)
 }
@@ -32,9 +32,6 @@ module.exports.parseString = function (string, iArray) {
     if (iArray == null) {
         iArray = ignoreArray
     }
-
-    
-
 
     if (string.includes("/quiet")) {
         iArray.fill(true)
@@ -45,58 +42,11 @@ module.exports.parseString = function (string, iArray) {
         iArray.fill(false)
         return "Waffle daffle submarine"
     }
-    
+
     if (!iArray[rules.length]) {
-
-        //temp
-        var convertMatch = convert(fToC, string, "°f", "°c", /(-?\d{1,25})\.?,?(\d{0,10})\s?(fahrenheit|f($|\W))/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(cToF, string, "°c", "°f", /(-?\d{1,25})\.?,?(\d{0,10})\s?(celcius|centigrade|c($|\W))/)
-        if (convertMatch != null) return convertMatch
-
-        //length
-        convertMatch = convert(mToFeet, string, "meter", "feet", /(-?\d{1,25})\.?,?(\d{0,10})\s?(meter|m($|\W))/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(feetToM, string, "feet", "meter", /(-?\d{1,25})\.?,?(\d{0,10})\s?(feet|foot)/)
-        if (convertMatch != null) return convertMatch
-
-        convertMatch = convert(kmToMile, string, "km/h", "mph", /(-?\d{1,25})\.?,?(\d{0,10})\s?km(p|\/)h/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(mileToKm, string, "mph", "km/h", /(-?\d{1,25})\.?,?(\d{0,10})\s?mph/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(kmToMile, string, "km", "miles", /(-?\d{1,25})\.?,?(\d{0,10})\s?(km|kilomet)/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(mileToKm, string, "miles", "km", /(-?\d{1,25})\.?,?(\d{0,10})\s?mile/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(cmToInch, string, "cm", "inches", /(-?\d{1,25})\.?,?(\d{0,10})\s?(cm|centimet)/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(inchToCm, string, "inches", "cm", /(-?\d{1,25})\.?,?(\d{0,10})\s?inch/)
-        if (convertMatch != null) return convertMatch
-
-        //weight
-        convertMatch = convert(tonneToTon, string, "metric tonnes", "US tons", /(-?\d{1,25})\.?,?(\d{0,10})\s?tonne/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(tonToTonne, string, "US tons", "metric tonnes", /(-?\d{1,25})\.?,?(\d{0,10})\s?ton/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(gramToOunce, string, "grams", "ounces", /(-?\d{1,25})\.?,?(\d{0,10})\s?(gram|g($|\W))/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(ounceToGram, string, "ounces", "grams", /(-?\d{1,25})\.?,?(\d{0,10})\s?ounce/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(kgToPound, string, "kg", "pounds", /(-?\d{1,25})\.?,?(\d{0,10})\s?(kg|kilogram)/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(poundToKg, string, "pounds", "kg", /(-?\d{1,25})\.?,?(\d{0,10})\s?pound/)
-        if (convertMatch != null) return convertMatch
-
-        //volume
-        convertMatch = convert(literToGallon, string, "liters", "gallons", /(-?\d{1,25})\.?,?(\d{0,10})\s?(liter|l($|\W))/)
-        if (convertMatch != null) return convertMatch
-        convertMatch = convert(gallonToLiter, string, "gallons", "liters", /(-?\d{1,25})\.?,?(\d{0,10})\s?gallon/)
-        if (convertMatch != null) return convertMatch
+        const retVal = lookForConversions(string)
+        if (retVal != null) return retVal 
     }
-
-
-    
-
 
     if (string.includes("@")) {
         if (string.includes("@interjectionbot")) {
@@ -135,67 +85,125 @@ function matchList(match, src, matchAll) {
     }
 }
 
-function convert(formula, text, fromText, toText, regex) {
-    regexMatch = text.match(regex)
+function lookForConversions(string) {
+    //temp
+    // var convertMatch = convert(fToC, string, "°f", "°c", /(?>^|\s)(-?\d{1,25})\.?,?(\d{0,10})\s?(?>fahrenheit|f(?>$|\W))/)
+    var convertMatch = convert(fToC, string, "°f", "°c", "(fahrenheit|f" + rxE + ")")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(cToF, string, "°c", "°f", "(celcius|centigrade|c" + rxE + ")")
+    if (convertMatch != null) return convertMatch
+
+    //length
+    convertMatch = convert(mToFeet, string, "meters", "feet", "(meter|m" + rxE + ")")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(feetToM, string, "feet", "meters", "(feet|foot|ft" + rxE + ")")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(yardToM, string, "yards", "meters", "(yard|yd" + rxE + ")")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(kmToMile, string, "km/h", "mph", "km(p|\/)h" + rxE)
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(mileToKm, string, "mph", "km/h", "mph" + rxE)
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(msToKmh, string, "m/s", "km/h", "(m/s|mps|meters per second)")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(kmToMile, string, "km", "miles", "(km" + rxE + "|kilomet)")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(mileToKm, string, "miles", "km", "mile")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(cmToInch, string, "cm", "inches", "(cm" + rxE + "|centimet)")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(inchToCm, string, "inches", "cm", "(in" + rxE + "|inch)")
+    if (convertMatch != null) return convertMatch
+
+    //weight
+    convertMatch = convert(tonneToTon, string, "metric tonnes", "US tons", "tonne")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(tonToTonne, string, "US tons", "metric tonnes", "ton")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(gramToOunce, string, "grams", "ounces", "(g" + rxE + "|gram)")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(ounceToGram, string, "ounces", "grams", "ounce")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(kgToPound, string, "kg", "pounds", "(kg" + rxE + "|kilogram)")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(poundToKg, string, "pounds", "kg", "pound")
+    if (convertMatch != null) return convertMatch
+
+    //volume
+    convertMatch = convert(literToGallon, string, "liters", "gallons", "(liter|l" + rxE + ")")
+    if (convertMatch != null) return convertMatch
+    convertMatch = convert(gallonToLiter, string, "gallons", "liters", "gallon")
+    return convertMatch // must be last
+}
+
+function convert(formula, string, fromText, toText, regex) {
+    const regex2 = new RegExp(rxB + regex)
+    regexMatch = string.match(regex2)
     if (regexMatch) {
-        var fromValue = parseFloat(regexMatch[1] + "." + regexMatch[2])
+        const fromValue = parseFloat(regexMatch[2] + "." + regexMatch[3])
         return fromValue.toFixed(2) + " " + fromText + " is " + formula(fromValue).toFixed(2) + " " + toText
     }
     return null
 }
 
 //temp
-function cToF (c) {
-    return (c * 9/5) + 32
+function cToF(c) {
+    return (c * 9 / 5) + 32
 }
-function fToC (f) {
-    return (f - 32) * 5/9
+function fToC(f) {
+    return (f - 32) * 5 / 9
 }
 
 //length
-function mToFeet (m) {
-    return m*3.281
+function mToFeet(m) {
+    return m * 3.281
 }
-function feetToM (f) {
-    return f/3.281
+function feetToM(f) {
+    return f / 3.281
 }
-function cmToInch (cm) {
-    return cm/2.54
+function yardToM(yd) {
+    return yd / 1.094
 }
-function inchToCm (inch) {
-    return inch*2.54
+function cmToInch(cm) {
+    return cm / 2.54
 }
-function kmToMile (km) {
-    return km/1.609
+function inchToCm(inch) {
+    return inch * 2.54
 }
-function mileToKm (mile) {
-    return mile*1.609
+function kmToMile(km) {
+    return km / 1.609
+}
+function mileToKm(mile) {
+    return mile * 1.609
+}
+function msToKmh(ms) {
+    return ms * 3.6
 }
 
 //weight
-function kgToPound (kg) {
-    return kg*2.205
+function kgToPound(kg) {
+    return kg * 2.205
 }
-function poundToKg (pound) {
-    return pound/2.205
+function poundToKg(pound) {
+    return pound / 2.205
 }
-function tonneToTon (tonne) {
-    return tonne*1.102
+function tonneToTon(tonne) {
+    return tonne * 1.102
 }
-function tonToTonne (ton) {
-    return ton/1.102
+function tonToTonne(ton) {
+    return ton / 1.102
 }
-function gramToOunce (gram) {
-    return gram/28.35
+function gramToOunce(gram) {
+    return gram / 28.35
 }
-function ounceToGram (ounce) {
-    return ounce*28.35
+function ounceToGram(ounce) {
+    return ounce * 28.35
 }
 
 //volume
-function literToGallon (liter) {
-    return liter/4.546
+function literToGallon(liter) {
+    return liter / 4.546
 }
-function gallonToLiter (gallon) {
-    return gallon*4.546
+function gallonToLiter(gallon) {
+    return gallon * 4.546
 }

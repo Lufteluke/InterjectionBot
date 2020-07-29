@@ -44,5 +44,7 @@ test ("3.30 gallon")
 test ("5 pounds")
 test ("2.27 kg.")
 test ("21111111111111111111111111111111111111.27 kg.")
-
+test (">:3c")
+test ("500yards")
+test ("9001 m/s")
 //test ("lufbot")
