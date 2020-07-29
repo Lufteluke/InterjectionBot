@@ -49,7 +49,7 @@ module.exports.parseString = function (string, iArray) {
     if (!iArray[rules.length]) {
 
         //temp
-        var convertMatch = convert(fToC, string, "°f", "°c", /(\d+)\.*,*(\d*)\s*fahrenheit/)
+        var convertMatch = convert(fToC, string, "°f", "°c", /(\d+)\.*,*(\d*)\s*(fahrenheit|f(\s|$|\W))/)
         if (convertMatch != null) return convertMatch
         convertMatch = convert(cToF, string, "°c", "°f", /(\d+)\.*,*(\d*)\s*(celcius|centigrade|c(\s|$|\W))/)
         if (convertMatch != null) return convertMatch
@@ -80,7 +80,11 @@ module.exports.parseString = function (string, iArray) {
         if (convertMatch != null) return convertMatch
         convertMatch = convert(gramToOunce, string, "grams", "ounces", /(\d+)\.*,*(\d*)\s*(gram|g(\s|$|\W))/)
         if (convertMatch != null) return convertMatch
-        convertMatch = convert(OunceToGram, string, "ounces", "grams", /(\d+)\.*,*(\d*)\s*ounce/)
+        convertMatch = convert(ounceToGram, string, "ounces", "grams", /(\d+)\.*,*(\d*)\s*ounce/)
+        if (convertMatch != null) return convertMatch
+        convertMatch = convert(kgToPound, string, "kg", "pounds", /(\d+)\.*,*(\d*)\s*(kg|kilogram)/)
+        if (convertMatch != null) return convertMatch
+        convertMatch = convert(poundToKg, string, "pounds", "kg", /(\d+)\.*,*(\d*)\s*pound/)
         if (convertMatch != null) return convertMatch
 
         //volume
@@ -184,7 +188,7 @@ function tonToTonne (ton) {
 function gramToOunce (gram) {
     return gram/28.35
 }
-function OunceToGram (ounce) {
+function ounceToGram (ounce) {
     return ounce*28.35
 }
 
