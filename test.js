@@ -43,5 +43,6 @@ test ("15 Liters")
 test ("3.30 gallon")
 test ("5 pounds")
 test ("2.27 kg.")
+test ("21111111111111111111111111111111111111.27 kg.")
 
 //test ("lufbot")
