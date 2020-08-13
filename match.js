@@ -284,7 +284,8 @@ module.exports.pairs = [
                 ["face", "mom"]
             ],
             "🔥",
-            "yiff"
+            "yiff",
+            "eeyore"
         ],"🔥"
     ],
     [
