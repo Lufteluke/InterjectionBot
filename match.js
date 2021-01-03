@@ -61,7 +61,7 @@ module.exports.pairs = [
     ["framework", "https://youtu.be/Wm2h0cbvsw8"],
     ["bulge", "https://youtu.be/o9l4EiYFZjg"],
     ["amazon", "https://youtu.be/x6U2Un5kEdI"],
-    ["asmr", "https://youtu.be/x6U2Un5kEdI"],
+    ["asmr", "https://youtu.be/KgoTTL2YaOc"],
     ["oblivion", "https://youtu.be/MyQn2ic2Wzw"],
     ["the store", "https://youtu.be/iRZ2Sh5-XuM"],
     ["corona", "https://youtu.be/4dPd708Sk98"],
