@@ -184,6 +184,7 @@ module.exports.pairs = [
     ["cyborg", "https://youtu.be/clIiP1H3Opw"],
     ["aurora borealis", "https://youtu.be/qQ36Repf-ZQ"],
     ["full auto", "https://youtu.be/PlPniwWpbuE?t=35"],
+    ["hehe", "https://youtu.be/TNbBBGI2BgY"],
 
     //things he don't like
     ["eat shit", "and die"],
