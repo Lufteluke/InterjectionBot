@@ -185,6 +185,7 @@ module.exports.pairs = [
     ["aurora borealis", "https://youtu.be/qQ36Repf-ZQ"],
     ["full auto", "https://youtu.be/PlPniwWpbuE?t=35"],
     ["hehe", "https://youtu.be/TNbBBGI2BgY"],
+    [["salame", "saleme"], "https://youtu.be/FWqimMpbTyU"],
 
     //things he don't like
     ["eat shit", "and die"],
