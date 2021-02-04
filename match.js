@@ -186,6 +186,7 @@ module.exports.pairs = [
     ["full auto", "https://youtu.be/PlPniwWpbuE?t=35"],
     ["hehe", "https://youtu.be/TNbBBGI2BgY"],
     [["salame", "saleme"], "https://youtu.be/FWqimMpbTyU"],
+    ["online university", "https://youtu.be/XQLdhVpLBVE"],
 
     //things he don't like
     ["eat shit", "and die"],
