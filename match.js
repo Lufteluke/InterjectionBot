@@ -39,7 +39,6 @@ module.exports.pairs = [
             "josh"
         ],"Hey Josh, look at this huge moth that I found https://youtu.be/B211aVOdvpc"
     ],
-    ["stew song", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
     ["too hot", "The sun is too hot! https://youtu.be/XhIBegli6dE"],
     ["tranquil", "I need peace and tranquility! https://youtu.be/SHvhps47Lmc"],
     [
@@ -155,7 +154,7 @@ module.exports.pairs = [
     ["flamethrower", "Mac wants the flamethrower! https://youtu.be/aDnj-PV1-tc"],
     ["bees", "https://youtu.be/8CvqmD0CZao"],
     ["brody", "Reach for the stars! https://youtu.be/YqBLxzn6kcU"],
-    [["limewire", "pirat"], "Do what you want! https://youtu.be/IBH4g_ua5es"],
+    [["limewire", "pirat"], "Do what you want! https://youtu.be/GVXCr6upWUo"],
     [["what is this place", "girlchan", "what are you doing up", "kenstar", "maytag", "bucket of water", "egoraptor" ["flavour", "sticks"]], "Whaaaaat is this place! https://youtu.be/_CLgpd241Aw"],
     [["nasa pepo", "nanalan", "tomado", "shoosh", ["snudder", "mado"]], "NASA PEPO! https://youtu.be/lyrdZ88lG-0"],
     [["moon"], "Haha, you guys believe in the moon? https://youtu.be/IDx1Kh2iU6o"],
@@ -187,6 +186,8 @@ module.exports.pairs = [
     ["hehe", "https://youtu.be/TNbBBGI2BgY"],
     [["salame", "saleme"], "https://youtu.be/FWqimMpbTyU"],
     ["online university", "https://youtu.be/XQLdhVpLBVE"],
+    ["stew song", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
+    ["submarine", "Subbymarine https://youtu.be/jY5VkQ92ABo"],
 
     //things he don't like
     ["eat shit", "and die"],
@@ -199,7 +200,6 @@ module.exports.pairs = [
     ["raccoon", "*Washbear"],
     ["hedgehog", "*Hodgehedge"],
     ["hyena", "*Yeen"],
-    ["hedgehog", "*Hodgehedge"],
     ["coyote", "*Yoot"],
     ["youre", "*you're"],
     ["breathtaking", "You're breathtaking!"],
