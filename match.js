@@ -94,6 +94,7 @@ module.exports.pairs = [
     [[["ultimate", "battle"]], "Let's fight! https://youtu.be/4WgT9gy4zQA"],
     [[["cigar", "juice"]], "Good news! https://youtu.be/TC2OKcHAwQY"],
     [[["live", "forever"], "immortal"], "This is my wife! https://youtu.be/xg29TuWo0Yo"],
+    [[["too", "cooks"]], "How did they get the title colour different from anything else I've ever seen?? https://youtu.be/QrGrOK8oZG8"],
     ["it's friday", "It's friday, my dudes https://youtu.be/kfVsfOSbJY0"],
     [
         [//or
@@ -170,7 +171,7 @@ module.exports.pairs = [
     [["better watch out", "gonna find out"], "He's gonna find out! https://youtu.be/tI0o4WwpXTY"],
     [" api", "https://youtu.be/nSKp2StlS6s"],
     ["antiqu", "Judge Dredge! https://youtu.be/kjrpo62uGJc"],
-    ["let me see what you have", "A knife! https://youtu.be/d6gBu2Zd7Bc"],
+    ["see what you have", "A knife! https://youtu.be/d6gBu2Zd7Bc"],
     [["lynks", "clay"], "https://youtu.be/453wgsWT5Ao"],
     [[[["ok", "okay", "hey", "hi"], "google"]], "https://youtu.be/xXcRw0QBZoY"],
     [["despacito", ["so sad", "despacito"]], "This is so sad! https://youtu.be/1PCY0-FYDNY"],
