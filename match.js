@@ -96,6 +96,7 @@ module.exports.pairs = [
     [[["live", "forever"], "immortal"], "This is my wife! https://youtu.be/xg29TuWo0Yo"],
     [[["too", "cooks"]], "How did they get the title colour different from anything else I've ever seen?? https://youtu.be/QrGrOK8oZG8"],
     ["it's friday", "It's friday, my dudes https://youtu.be/kfVsfOSbJY0"],
+    ["vib ribbon", "This is what happens when you make a mistake https://youtu.be/cFXz_xKQa40"],
     [
         [//or
             "ea sports",
