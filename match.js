@@ -37,7 +37,7 @@ module.exports.pairs = [
         [//or
             "moth",
             "josh"
-        ],"Hey Josh, look at this huge moth that I found https://youtu.be/B211aVOdvpc"
+        ],"Hey Josh, look at this huge moth that I found https://youtu.be/iUJ8r4ReHog"
     ],
     ["too hot", "The sun is too hot! https://youtu.be/XhIBegli6dE"],
     ["tranquil", "I need peace and tranquility! https://youtu.be/SHvhps47Lmc"],
@@ -95,6 +95,7 @@ module.exports.pairs = [
     [[["cigar", "juice"]], "Good news! https://youtu.be/TC2OKcHAwQY"],
     [[["live", "forever"], "immortal"], "This is my wife! https://youtu.be/xg29TuWo0Yo"],
     [[["too", "cooks"]], "How did they get the title colour different from anything else I've ever seen?? https://youtu.be/QrGrOK8oZG8"],
+    [[["k ", "horses"]], "K is for horses you stupid fuck! https://youtu.be/NSTx31dxmgA"],
     ["it's friday", "It's friday, my dudes https://youtu.be/kfVsfOSbJY0"],
     [
         [//or
