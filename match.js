@@ -97,6 +97,7 @@ module.exports.pairs = [
     [[["too", "cooks"]], "How did they get the title colour different from anything else I've ever seen?? https://youtu.be/QrGrOK8oZG8"],
     [[["k ", "horses"]], "K is for horses you stupid fuck! https://youtu.be/NSTx31dxmgA"],
     ["it's friday", "It's friday, my dudes https://youtu.be/kfVsfOSbJY0"],
+    ["vib ribbon", "This is what happens when you make a mistake https://youtu.be/cFXz_xKQa40"],
     [
         [//or
             "ea sports",
