@@ -67,7 +67,17 @@ module.exports.parseString = function (string, iArray) {
             return rules[i][1]
         }
     }
+
+    if (Math.random() < 0.01) return sarcasm(string);
     return ""
+}
+
+function sarcasm(input) {
+    let split = input.split('');
+    for (let i = 0; i < split.length; i++) {
+        if(i % 2 == 1) split[i] = split[i].toUpperCase();
+    }
+    return split.join('');
 }
 
 function matchList(match, src, matchAll) {
