@@ -48,13 +48,9 @@ module.exports.parseString = function (string, iArray) {
     if (retVal != null) return retVal;
   }
 
-  const rx = [
-    ...string.matchAll(
-      /^(.*?)(https:\/\/)(twitter\.com\/)(.+?\/?\d+)(\?\S*)*(.*)/g
-    ),
-  ];
+  const rx = [...string.matchAll(/(https:\/\/)(twitter\.com\/.+?\/?\d+)/g)];
   if (rx.length > 0) {
-    return `${rx[0][1]}${rx[0][2]}fx${rx[0][3]}${rx[0][4]}${rx[0][6]}`;
+    return `${rx[0][1]}fx${rx[0][2]}`;
   }
 
   if (string.includes("@")) {
