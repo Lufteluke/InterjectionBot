@@ -47,4 +47,10 @@ test ("21111111111111111111111111111111111111.27 kg.")
 test (">:3c")
 test ("500yards")
 test ("9001 m/s")
+test ("https://twitter.com/FalseKnees/status/1568310519253049349?s=20&t=8-_wJEQzYtLRW_vYueL5BA")
+test ("Stuff https://twitter.com/FalseKnees/status/1568310519253049349?s=20&t=8-_wJEQzYtLRW_vYueL5BA and things")
+test ("Stuff https://twitter.com/FalseKnees/status/1568310519253049349 and things")
+test ("Stuff https://fxtwitter.com/FalseKnees/status/1568310519253049349 and things")
+
+
 //test ("lufbot")
