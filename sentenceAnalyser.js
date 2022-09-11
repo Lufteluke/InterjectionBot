@@ -48,6 +48,11 @@ module.exports.parseString = function (string, iArray) {
         if (retVal != null) return retVal 
     }
 
+    const rx = [...string.matchAll(/^(.*?)(https:\/\/)(twitter\.com\/)(.+?\/?\d+)(\?\S*)*(.*)/g)]
+    if (rx.length > 0) {        
+        return (`${rx[0][1]}${rx[0][2]}fx${rx[0][3]}${rx[0][4]}${rx[0][6]}`)
+    }
+
     if (string.includes("@")) {
         if (string.includes("@interjectionbot")) {
             return "Hi~"
