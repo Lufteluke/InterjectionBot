@@ -48,7 +48,7 @@ module.exports.parseString = function (string, iArray) {
     if (retVal != null) return retVal;
   }
 
-  const rx = [...string.matchAll(/(https:\/\/)(twitter\.com\/.+?\/?\d+)/g)];
+  const rx = [...string.matchAll(/(https:\/\/)(twitter\.com\/.+\/\d+)/g)];
   if (rx.length > 0) {
     return `${rx[0][1]}fx${rx[0][2]}`;
   }
