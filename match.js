@@ -112,6 +112,10 @@ module.exports.pairs = [
     "Kimba - Simba? Hmmm, suspicious. https://youtu.be/bmf7qYnhlLA",
   ],
   [
+    ["eeee", "papryka", "couscous"],
+    "Eeeeee https://youtu.be/m-NgHh36_vU",
+  ],
+  [
     ["in the end", "linkin park", "doesn't matter"],
     "https://youtu.be/eVTXPUF4Oz4",
   ],
