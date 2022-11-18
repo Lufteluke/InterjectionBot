@@ -54,7 +54,7 @@ module.exports.pairs = [
     "How is pragnent formed? https://youtu.be/EShUeudtaFg",
   ],
   ["octagon", "An octagon has 8 awesome angles. https://youtu.be/7ziWe_oNb58"],
-  ["cash money", "This is so not cash money! https://youtu.be/TWaP-RnGocg"],
+  ["cash money", "This is so not cash money! https://youtu.be/YSWKtuaV2fY"],
   [
     [
       //or
@@ -83,11 +83,11 @@ module.exports.pairs = [
   ["spacex", "https://youtu.be/bvim4rsNHkQ"],
   ["furret", "https://youtu.be/MMEuHdyexuw"],
   ["the baby", "https://youtu.be/YcppnDs2Rz8"],
-  ["the baby", "https://youtu.be/EKRUwVmkS8U"],
+  ["tomska", "https://youtu.be/EKRUwVmkS8U"],
   ["leggy", "https://twitter.com/RatchetFoxxo/status/1259291222750838784"],
   ["framework", "https://youtu.be/Wm2h0cbvsw8"],
   ["bulge", "https://youtu.be/o9l4EiYFZjg"],
-  ["amazon", "https://youtu.be/x6U2Un5kEdI"],
+  ["democracy", "https://youtu.be/x6U2Un5kEdI"],
   ["asmr", "https://youtu.be/KgoTTL2YaOc"],
   ["oblivion", "https://youtu.be/MyQn2ic2Wzw"],
   ["the store", "https://youtu.be/iRZ2Sh5-XuM"],
@@ -174,7 +174,7 @@ module.exports.pairs = [
     "the bank",
     "I RESIGN TODAY AS PRESIDENT OF   T H E   B A N K https://youtu.be/FOt03jAqI_k",
   ],
-  ["scootaloo", "*confused blinking* https://youtu.be/pOPvlA8jZjQ"],
+  ["scootaloo", "*confused blinking* https://youtu.be/Ce8yU5Tv-go"],
   [
     [
       //or
@@ -267,7 +267,7 @@ module.exports.pairs = [
     "NASA PEPO! https://youtu.be/lyrdZ88lG-0",
   ],
   [
-    ["moon"],
+    ["believe in the moon"],
     "Haha, you guys believe in the moon? https://youtu.be/IDx1Kh2iU6o",
   ],
   [["nrk", "bbc", "cnn", "news", "trump", "president"], "It begins..."],
@@ -292,7 +292,7 @@ module.exports.pairs = [
     ["better watch out", "gonna find out"],
     "He's gonna find out! https://youtu.be/tI0o4WwpXTY",
   ],
-  [" api", "https://youtu.be/nSKp2StlS6s"],
+  ["your api", "https://youtu.be/nSKp2StlS6s"],
   ["antiqu", "Judge Dredge! https://youtu.be/kjrpo62uGJc"],
   ["see what you have", "A knife! https://youtu.be/d6gBu2Zd7Bc"],
   [["lynks", "clay"], "https://youtu.be/453wgsWT5Ao"],
@@ -311,12 +311,13 @@ module.exports.pairs = [
     "The cheese melts in the microwave, the music melts in S_ìbeli_i/u_s.  https://youtu.be/dKx1wnXClcI?t=985",
   ],
   ["bird up", "BIRD UP! https://youtu.be/gxR50HxH48E"],
+  ["the bibble", "THE BIBBLE! https://youtu.be/rZvGfsDzTfU"],
   [[["bitch", "song"]], "Bitch up! https://youtu.be/SRhvBu65HAo"],
   ["papers please", "https://youtu.be/DbBB1j5qAFs"],
   ["cyborg", "https://youtu.be/clIiP1H3Opw"],
   ["aurora borealis", "https://youtu.be/qQ36Repf-ZQ"],
   ["full auto", "https://youtu.be/PlPniwWpbuE?t=35"],
-  ["hehe", "https://youtu.be/TNbBBGI2BgY"],
+  ["what do you mean", "https://youtu.be/TNbBBGI2BgY"],
   [["salame", "saleme"], "https://youtu.be/FWqimMpbTyU"],
   ["online university", "https://youtu.be/XQLdhVpLBVE"],
   ["stew song", "Hedgehog stew! https://youtu.be/HnyGSl3K-IE"],
@@ -337,7 +338,7 @@ module.exports.pairs = [
   ["hedgehog", "*Hodgehedge"],
   ["hyena", "*Yeen"],
   ["coyote", "*Yoot"],
-  ["youre", "*you're"],
+  // ["youre", "*you're"],
   ["breathtaking", "You're breathtaking!"],
   [
     [
