@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc && node dist/test.js",
-    "start": "tsc && node dist/index.js",
+    "start": "node dist/index.js",
     "dev": "tsc --watch"
   }
 }
